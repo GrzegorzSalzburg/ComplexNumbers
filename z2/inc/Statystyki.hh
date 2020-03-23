@@ -4,8 +4,8 @@
 
 struct Statystyki
 {
-    unsigned int Porpawne;
-    unsigned int Bledne;
+    unsigned int poprawne;
+    unsigned int bledne;
     double Procent;
 };
 

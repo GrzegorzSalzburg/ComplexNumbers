@@ -1,6 +1,14 @@
 #include "LZespolona.hh"
+bool operator == (LZespolona  Skl1,  LZespolona  Skl2)
+{
+  if(Skl1.re==Skl2.re && Skl1.im==Skl2.im)
+  {
+    return true;
+  }
 
-bool wczytaj(LZespolona &  z){
+  return false;
+}
+bool wczytaj(LZespolona &z){
   char znak;
   cin>>znak;
     if(znak!='(')

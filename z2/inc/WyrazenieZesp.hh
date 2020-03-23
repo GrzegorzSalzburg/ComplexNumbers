@@ -24,4 +24,3 @@ std::ostream & operator <<(std::ostream &wyj, WyrazenieZesp  WyrZ);
 #endif
 
 
-/* 8+7i  7.98+7i   a.im==b.im  abs(a.im-b.im)<0.1->Epsilon blad dopuszczalny*/

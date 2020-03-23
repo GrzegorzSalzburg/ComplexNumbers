@@ -22,8 +22,7 @@ void Wyswietl(LZespolona Skl);
 /*Zapowiedzi definicji przeciazen operatorow*/
 std::ostream & operator <<(std::ostream &wyj, LZespolona Skl1);
 std::istream & operator >> (std::istream &wej, LZespolona & Skl1);
-
-
+bool operator == (LZespolona  Skl1,  LZespolona  Skl2);
 LZespolona  operator + (LZespolona  Skl1,  LZespolona  Skl2);
 LZespolona  operator - (LZespolona  Skl1,  LZespolona  Skl2);
 LZespolona  operator * (LZespolona  Skl1,  LZespolona  Skl2);

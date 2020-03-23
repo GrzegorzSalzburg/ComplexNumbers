@@ -98,6 +98,7 @@ LZespolona Oblicz(WyrazenieZesp Wyrz)
       Wyn=Wyrz.Arg1/Wyrz.Arg2;
       break;
     }
+    return Wyn;
 }
 
 	

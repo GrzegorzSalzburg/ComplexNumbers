@@ -2,7 +2,6 @@
 #define BAZATESTU_HH
 #include "WyrazenieZesp.hh"
 
-
 /*
  * Modeluje pojecie baze testu z zestawem pytan w tablicy
  * oraz informacji o maksymalnej ilosci pytan, jak
@@ -14,7 +13,6 @@ struct BazaTestu {
   unsigned int    IloscPytan;    /* Ilosc wszystkich pytan */
   unsigned int    IndeksPytania; /* Numer pytania, ktore ma byc pobrane jako nastepne */
 };
-
 
 /*
  * Inicjalizuje test powiazany z dana nazwa.

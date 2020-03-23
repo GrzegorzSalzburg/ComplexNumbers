@@ -2,10 +2,8 @@
 
 void Wyswietl(Statystyki sta)
 {
-    std::cout<<""<<sta.Porpawne<< std::endl;
-    std::cout<<""<<sta.Bledne<< std::endl;
-    std::cout<<""<<sta.Procent<<"%"<< std::endl;
-
-
-
+    std::cout<<"Statystyka odpowiedzi:"<<std::endl;
+    std::cout<<"Odpowiedzi poprawne: "<<" "<<sta.poprawne<< std::endl;
+    std::cout<<"Odpowiedzi negatywne: "<<" "<<sta.bledne<< std::endl;
+    std::cout<<"Wynik procentowy: "<<" "<<sta.Procent<<"%"<< std::endl;
 }
