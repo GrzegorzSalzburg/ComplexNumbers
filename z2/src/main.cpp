@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 
   WyrazenieZesp WyrZ;
   LZespolona Odp;
-  Statystyki sta={0,0,0};
+  Statystyki sta={0,0};
   while (PobierzNastpnePytanie(&BazaT,&WyrZ)) {
     cout << ":? Podaj wynik operacji: "<<WyrZ<<endl;
     for(int i=0; i<3;i++)
@@ -47,22 +47,22 @@ int main(int argc, char **argv)
       }
       cin.clear();
       cin.ignore(1024,'\n');
-      
-    }
+      }
     if(Odp==Oblicz(WyrZ))
     {
       cout<<":) Poprawna odpowiedz"<<endl;
       sta.poprawne++;
+      sta.wszystkie++;
     }
     else
     {
       cout<<":( Niepoprawna odpowiedz"<<endl;
-      sta.bledne++;
+      sta.wszystkie++;
     }
   }
   cout << endl;
   cout << "Koniec testu" <<endl;
-  sta.Procent=sta.poprawne*100.0/(sta.poprawne+sta.bledne);
+  
   Wyswietl(sta);
 }
     

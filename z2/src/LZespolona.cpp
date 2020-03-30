@@ -1,11 +1,19 @@
 #include "LZespolona.hh"
+
 bool operator == (LZespolona  Skl1,  LZespolona  Skl2)
 {
   if(Skl1.re==Skl2.re && Skl1.im==Skl2.im)
   {
     return true;
   }
-
+  return false;
+}
+bool operator != (LZespolona  Skl1,  LZespolona  Skl2)
+{
+  if(Skl1.re!=Skl2.re || Skl1.im!=Skl2.im)
+  {
+    return true;
+  }
   return false;
 }
 bool wczytaj(LZespolona &z){
@@ -133,7 +141,7 @@ double Modul2(LZespolona Skl)
 LZespolona  operator / (LZespolona  Skl1,  double  Skl2)
 {
     LZespolona  Wynik;
-
+  assert(Skl2!=0);
   Wynik.re = Skl1.re/Skl2;
   Wynik.im = Skl1.im/Skl2;
   return Wynik;
@@ -141,5 +149,6 @@ LZespolona  operator / (LZespolona  Skl1,  double  Skl2)
 
 LZespolona  operator / (LZespolona  Skl1,  LZespolona  Skl2)
 {
+  assert(Skl2.im!=0 || Skl2.re!=0 );
   return (Skl1*Sprzezenie(Skl2))/Modul2(Skl2);
 }

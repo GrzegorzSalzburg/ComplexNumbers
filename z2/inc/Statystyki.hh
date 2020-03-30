@@ -5,8 +5,7 @@
 struct Statystyki
 {
     unsigned int poprawne;
-    unsigned int bledne;
-    double Procent;
+    unsigned int wszystkie;
 };
 
 void Wyswietl(Statystyki sta);
